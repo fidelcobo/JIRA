@@ -1,0 +1,9 @@
+<RCC>
+	<qresource>
+		<file>Alien.png</file>
+		<file>Apply.png</file>
+		<file>Folder.png</file>
+		<file>Close.png</file>
+		<file>reloj.gif</file>
+	</qresource>
+</RCC>
