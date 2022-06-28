@@ -69,7 +69,7 @@ def obtener_clientes_agrupados(hoja):
 
         for i in range(len(lista_clientes_agrupados)):
             if item.client == lista_clientes_agrupados[i]:
-                aux_bids.append(lista_bids[i])
+                aux_bids.append(str(lista_bids[i]))
                 aux_contract_id.append(lista_id_contract[i])
                 aux_descr_proj.append(lista_descr_proj[i])
                 aux_descr_jira.append(lista_descr_jira[i])
@@ -143,8 +143,7 @@ def obtener_clientes_no_agrupados(hoja):
     lista_ACV = [item[0].value
                  for item in hoja['P' + str(indice_separacion + 3):'P' + str(ultima_fila)]]  # Lista de ACV
     lista_email_SA_asignado = [item[0].value
-                               for item in
-                               hoja['R' + str(indice_separacion + 3):'R' + str(ultima_fila)]]  # Lista de SA asignado
+                               for item in hoja['R' + str(indice_separacion + 3):'R' + str(ultima_fila)]]  # Lista de SA asignado
 
     set_bids = set(lista_bids)  # Obtenemos un listado de BIDs no repetidas
 
